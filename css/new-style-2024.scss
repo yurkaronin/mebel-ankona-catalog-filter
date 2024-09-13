@@ -1,0 +1,363 @@
+@import "./parts/modal";
+@import "./parts/favorite-folders-list";
+@import "./parts/custom-select";
+@import "./parts/custom-button";
+@import "./parts/button-create";
+@import "./parts/button-add";
+
+.cart-image-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  img {
+    display: block;
+    flex-shrink: 0;
+  }
+}
+
+.page-text {
+  text-align: center;
+  max-width: max-content;
+  margin: 0 auto;
+  margin-bottom: 16px;
+
+  &--mod {
+    text-align: left;
+    margin-inline: 0;
+  }
+}
+
+.comment--mod {
+  margin-bottom: 16px;
+}
+
+.buttons-group {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, auto);
+  max-width: max-content;
+  margin: 0 auto;
+
+  &--to-right {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.page-title__group {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-bottom: 28px;
+  padding-bottom: 22px;
+  position: relative;
+  &::after {
+    border-top: 1px solid #c1c1c1;
+    content: "";
+    display: block;
+    left: 0;
+    margin-left: -40px;
+    position: absolute;
+    top: 100%;
+    width: 120px;
+  }
+
+  .page-title {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.custom-details-folder {
+  .comment {
+    margin-bottom: 16px;
+    height: 170px;
+  }
+  .custom-button {
+    margin-right: 0;
+    margin-left: auto;
+    max-width: max-content;
+    margin-bottom: 24px;
+  }
+}
+
+.to-right {
+  margin-right: 0;
+  margin-left: auto;
+  max-width: max-content;
+}
+
+.cml_head--mod {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: initial;
+
+  .cmlh_inf {
+    margin-bottom: 0;
+  }
+
+  .cml_name {
+    padding: 10px 0;
+  }
+
+  .favorite-folders-list__navigation {
+    top: 0;
+    right: 0;
+  }
+  .favorite-folders-list__button {
+    right: 0;
+  }
+}
+
+.schet_main--mod {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .schet_list {
+    min-width: initial !important;
+  }
+  .sl_line {
+    width: max-content;
+    justify-content: flex-start;
+  }
+
+  .sl_cell {
+    flex-shrink: 0;
+    max-width: initial;
+    min-width: initial;
+    width: initial;
+    font-size: 16px;
+    b {
+      font-size: 18px;
+    }
+
+    &:nth-child(1) {
+      width: 260px !important;
+      min-width: initial !important;
+    }
+    &:nth-child(2) {
+      width: 260px !important;
+      min-width: initial !important;
+    }
+    &:nth-child(3) {
+      width: 240px !important;
+      min-width: initial !important;
+    }
+    &:nth-child(4) {
+      width: 120px !important;
+      min-width: initial !important;
+    }
+  }
+}
+
+.cat_main .wmain {
+  overflow: initial;
+}
+
+.custom-area {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 10px 15px;
+  padding-bottom: 20px;
+  background-color: #edf4fa;
+  width: 100%;
+  max-width: 100%;
+  font-size: 16px;
+  box-sizing: border-box;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  td,
+  th {
+    // border: 1px solid #ddd;
+    padding: 5px 8px;
+
+    &:nth-child(1) {
+      width: 250px;
+    }
+    &:nth-child(2) {
+      width: 210px;
+    }
+    &:nth-child(3) {
+      // width: 240px;
+    }
+  }
+  th {
+    text-align: left;
+  }
+}
+
+.sl_cell--grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 70px 1fr;
+  align-items: center;
+}
+
+.custom-tabel {
+  max-width: 100%;
+  width: 100%;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  &__line {
+    display: grid;
+    grid-template-columns: 1fr 150px 150px 150px 150px 150px;
+    justify-content: space-between;
+    max-width: 100%;
+    width: max-content;
+  }
+  &__cell {
+    padding: 8px 10px;
+    width: 100px !important;
+    min-width: 100px !important;
+  }
+
+  .sl__cell--big {
+    width: 485px !important;
+    min-width: initial !important;
+  }
+  .sl__cell--grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    width: 485px !important;
+
+    img {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.schet_main--mod2 {
+  font-size: 16px !important;
+  box-sizing: border-box;
+  * {
+    font-size: 16px !important;
+    box-sizing: border-box;
+  }
+  width: 100%;
+  max-width: 100%;
+  .sl_cell--flex {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 70px;
+      display: block;
+      margin-right: 12px;
+    }
+  }
+  .sl_cell {
+    padding: 8px 10px;
+    width: 120px !important;
+    min-width: 120px !important;
+    display: flex;
+    align-items: center;
+  }
+  .sl_cell--mod {
+    width: 550px !important;
+    min-width: 550px !important;
+  }
+  .sl_cell--flex {
+    min-width: 550px !important;
+    width: 550px !important;
+  }
+  .sl_line--color {
+    padding: 30px 0 !important;
+    background-color: #edf4fa;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 16px !important;
+    border: none !important;
+    * {
+      font-size: 16px !important;
+    }
+  }
+  .sl_line:last-of-type {
+    border: none;
+  }
+  .sl_line {
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: max-content;
+    width: max-content;
+  }
+  .sl_line + .sl_line {
+    border-top: 1px solid #d6d6d6;
+    max-width: max-content;
+    width: max-content;
+  }
+}
+
+.cust-users-list {
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 32px;
+  max-width: max-content;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, auto);
+  .favorite-folders-list__navigation-link::after {
+    display: none;
+  }
+}
+
+.custom-area {
+  max-width: 100%;
+  width: 100%;
+
+  @media (max-width: 800px) {
+    table {
+      width: max-content;
+    }
+  }
+}
+
+.cart-page {
+  .table-bordered {
+    tr {
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    td {
+      border: none !important;
+    }
+  }
+}
+
+// Адаптив ==========================
+
+@media (max-width: 768px) {
+  .cart-items tbody tr td {
+    font-size: 15px;
+    padding: 12px 6px;
+  }
+  .cart-items thead td {
+    font-size: 14px;
+    padding: 0 4px 12px 14px !important;
+  }
+  .cart-image-preview {
+    // max-width: 100%;
+  }
+}

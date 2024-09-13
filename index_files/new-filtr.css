@@ -1,0 +1,66 @@
+.cm_check_list label span.checkbox-icon {
+	display: inline-block;
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    background: #1872c5;
+    border-radius: 50%;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+	margin-left: 10px;
+}
+
+.checkbox-icon i {
+	display: none;
+	position: absolute;
+	height: 27px;
+	line-height: 27px;
+	padding: 0 10px;
+	color: #fff;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	background: #083f84;
+	bottom: 25px;
+	left: 11px;
+	font-style: normal;
+}
+
+.checkbox-icon i::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5px solid #083f84;
+    border-right: 5px solid transparent;
+    bottom: -5px;
+    left: 0;
+}
+
+.accordion-wrap .cm_check_list label {
+	display: flex;
+	overflow: visible;
+	padding-right: 25px;
+}
+
+.cm_check_list label .jq-checkbox {
+	flex-shrink: 0;
+}
+
+.checkbox-icon:hover i {
+	display: block;
+}
+
+.accordion-wrap .cm_check_list label span {
+	margin-left: 10px;
+}
+
+.jq-selectbox__dropdown {
+	position: relative !important;
+}

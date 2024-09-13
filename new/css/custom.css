@@ -1,0 +1,54 @@
+:root {
+  --blue: #1872c5;
+  --white: #fff;
+  --darkblue: #083f84;
+  --line: #dcdde1;
+  --black: #000;
+  --text: #343434;
+  --font-family: "Exo 2", sans-serif;
+}
+
+.custom-catalog-list__header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+.custom-catalog-list__to-back {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--blue);
+  display: flex;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  align-items: center;
+  background: var(--white);
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  padding: 0px 10px;
+  height: 30px;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-top: 11px;
+}
+.custom-catalog-list__to-back svg {
+  margin-right: 10px;
+}
+.custom-catalog-list__title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: var(--darkblue);
+  margin: 0;
+}
+.custom-catalog-list__grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 3fr 9fr;
+}
+
+.hide-now {
+  display: none !important;
+}/*# sourceMappingURL=custom.css.map */
