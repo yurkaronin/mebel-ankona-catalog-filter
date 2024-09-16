@@ -86,39 +86,45 @@
 
                   <!-- Категория -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view visually-hidden">Категория</legend>
-                    <select class="custom-catalog-filter__select" name="category">
-                      <option value="oven" selected>Духовые шкафы</option>
-                      <option value="cooktop">Варочные поверхности</option>
-                      <option value="hoods">Вытяжки</option>
-                      <option value="microwave">СВЧ и компактные приборы</option>
-                      <option value="dishwasher">Посудомоечные машины</option>
-                      <option value="washer-dryer">Стиральные и сушильные машины</option>
-                      <option value="fridge-freezer">Холодильники, морозильники</option>
-                      <option value="kitchen-sinks">Кухонные мойки</option>
-                      <option value="kitchen-faucets">Смесители для кухни</option>
-                      <option value="disposers">Измельчители</option>
-                      <option value="accessories">Аксессуары</option>
-                    </select>
+                    <legend class="custom-catalog-filter__group-name visually-hidden">Категория</legend>
+                    <div class="custom-catalog-filter__select">
+                      <select name="category">
+                        <option value="oven" selected>Духовые шкафы</option>
+                        <option value="cooktop">Варочные поверхности</option>
+                        <option value="hoods">Вытяжки</option>
+                        <option value="microwave">СВЧ и компактные приборы</option>
+                        <option value="dishwasher">Посудомоечные машины</option>
+                        <option value="washer-dryer">Стиральные и сушильные машины</option>
+                        <option value="fridge-freezer">Холодильники, морозильники</option>
+                        <option value="kitchen-sinks">Кухонные мойки</option>
+                        <option value="kitchen-faucets">Смесители для кухни</option>
+                        <option value="disposers">Измельчители</option>
+                        <option value="accessories">Аксессуары</option>
+                      </select>
+                    </div>
                   </fieldset>
 
                   <!-- Цена -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view">Цена, руб</legend>
+                    <legend class="custom-catalog-filter__group-name">Цена, руб</legend>
                     <div class="custom-catalog-filter__price">
-                      <label for="min-price">от</label>
-                      <input type="number" id="min-price" name="min-price" class="custom-catalog-filter__price-input"
-                        placeholder="19 590" />
+                      <div class="custom-catalog-filter__price-item">
+                        <label for="min-price">от</label>
+                        <input type="number" id="min-price" name="min-price" class="custom-catalog-filter__price-input"
+                          placeholder="19 590" />
+                      </div>
+                      <div class="custom-catalog-filter__price-item">
+                        <label for="max-price">до</label>
+                        <input type="number" id="max-price" name="max-price" class="custom-catalog-filter__price-input"
+                          placeholder="99 990" />
+                      </div>
 
-                      <label for="max-price">до</label>
-                      <input type="number" id="max-price" name="max-price" class="custom-catalog-filter__price-input"
-                        placeholder="99 990" />
                     </div>
                   </fieldset>
 
                   <!-- Бренды -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view">Бренд</legend>
+                    <legend class="custom-catalog-filter__group-name">Бренд</legend>
 
                     <div class="custom-catalog-filter__item">
                       <input type="checkbox" class="visually-hidden" name="brand" id="brand-delonghi"
@@ -158,7 +164,7 @@
 
                   <!-- Тип товаров -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view">Тип товаров</legend>
+                    <legend class="custom-catalog-filter__group-name">Тип товаров</legend>
 
                     <div class="custom-catalog-filter__item">
                       <input type="radio" class="visually-hidden" name="product-type" id="product-gas" value="gas" />
@@ -179,7 +185,7 @@
 
                   <!-- Размеры -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view">Размеры</legend>
+                    <legend class="custom-catalog-filter__group-name">Размеры</legend>
 
                     <div class="custom-catalog-filter__item">
                       <input type="checkbox" class="visually-hidden" name="size" id="size-45" value="45" />
@@ -205,7 +211,7 @@
 
                   <!-- Конвекция -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view">Конвекция</legend>
+                    <legend class="custom-catalog-filter__group-name">Конвекция</legend>
 
                     <div class="custom-catalog-filter__item">
                       <input type="checkbox" class="visually-hidden" name="convection" id="convection-static"
@@ -221,7 +227,7 @@
 
                   <!-- Дизайн -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view">Дизайн</legend>
+                    <legend class="custom-catalog-filter__group-name">Дизайн</legend>
 
                     <div class="custom-catalog-filter__item">
                       <input type="checkbox" class="visually-hidden" name="design" id="design-modern" value="modern" />
@@ -249,7 +255,7 @@
 
                   <!-- Время приготовления -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view">Время приготовления</legend>
+                    <legend class="custom-catalog-filter__group-name">Время приготовления</legend>
 
                     <div class="custom-catalog-filter__item">
                       <input type="checkbox" class="visually-hidden" name="cooking-time" id="time-no-timer"
@@ -284,7 +290,7 @@
 
                   <!-- Управление -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view">Управление</legend>
+                    <legend class="custom-catalog-filter__group-name">Управление</legend>
 
                     <div class="custom-catalog-filter__item">
                       <input type="checkbox" class="visually-hidden" name="control" id="control-mechanical"
@@ -313,7 +319,7 @@
 
                   <!-- Тип направляющих -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view">Тип направляющих</legend>
+                    <legend class="custom-catalog-filter__group-name">Тип направляющих</legend>
 
                     <div class="custom-catalog-filter__item">
                       <input type="checkbox" class="visually-hidden" name="guides" id="guides-relief"
@@ -347,7 +353,7 @@
 
                   <!-- Дополнительно -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view">Дополнительно</legend>
+                    <legend class="custom-catalog-filter__group-name">Дополнительно</legend>
 
                     <div class="custom-catalog-filter__item">
                       <input type="checkbox" class="visually-hidden" name="additional" id="additional-retractable"
@@ -380,7 +386,7 @@
 
                   <!-- Цвета -->
                   <fieldset class="custom-catalog-filter__group">
-                    <legend class="custom-catalog-filter__view">Цвета</legend>
+                    <legend class="custom-catalog-filter__group-name">Цвета</legend>
 
                     <div class="custom-catalog-filter__item">
                       <input type="checkbox" class="visually-hidden" name="color" id="color-beige" value="beige" />
